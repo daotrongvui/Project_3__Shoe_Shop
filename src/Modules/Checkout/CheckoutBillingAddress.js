@@ -13,7 +13,7 @@ const CheckoutBillingAddress = () => {
                 'w-100  ': true,
             })}
         >
-            <h5>Billing address</h5>
+            <h5>Địa chỉ thanh toán</h5>
             <Row className="mt-3 ">
                 <Col className="mb-2" xs={12} md={6}>
                     <InputField placeholder="Name" />

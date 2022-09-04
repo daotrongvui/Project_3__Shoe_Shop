@@ -25,7 +25,7 @@ const CatalogFilterColors = (props) => {
 
     return (
         <div className="mt-2 mb-3">
-            <h3 className={classes.title}>Choose Color</h3>
+            <h3 className={classes.title}>Chọn màu</h3>
             <div className="d-flex mt-2 flex-wrap">
                 {colors.map((color, index) => (
                     <div>

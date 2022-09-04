@@ -7,7 +7,7 @@ const CatalogFilterSizes = (props) => {
     const { sizes } = props;
     return (
         <div className="mt-2 mb-3">
-            <h3 className={classes.title}>Choose Size</h3>
+            <h3 className={classes.title}>Chọn size</h3>
             <div className="d-flex mt-2 flex-wrap">
                 {sizes.map((size, index) => (
                     <div>

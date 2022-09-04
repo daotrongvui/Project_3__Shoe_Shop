@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: 'none!important',
         fontWeight: 600,
         '&:hover , &:active': {
-            opacity: '.9',
+            opacity: '0.9',
         },
     },
 }));

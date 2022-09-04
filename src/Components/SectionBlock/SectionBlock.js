@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
         },
         '& h6': {
             position: 'absolute',
-            color: '#fff',
+            color: '#875e5e',
             fontWeight: 600,
             fontSize: 38,
         },

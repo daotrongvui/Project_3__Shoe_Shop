@@ -13,21 +13,21 @@ const CheckoutSummary = () => {
                 'w-100  ': true,
             })}
         >
-            <h5>Checkout Summary</h5>
+            <h5>Tổng thanh toán</h5>
             <div className="d-flex mt-3">
-                <p>Subtotal:</p>
+                <p>Tổng tiền:</p>
                 <p className="ml-auto">150.88$</p>
             </div>
-            <div className="d-flex ">
-                <p>Shipping:</p>
+            <div className="d-flex">
+                <p>Phí ship:</p>
                 <p className="ml-auto">15.88$</p>
             </div>
             <div className="d-flex mt-4">
-                <h6>Total:</h6>
+                <h6>Tổng cộng:</h6>
                 <h6 className="ml-auto">15.88$</h6>
             </div>
             <div className="mt-3">
-                <ButtonBlock as={Link} to={Url.Checkout} text="Checkout" />
+                <ButtonBlock as={Link} to={Url.Checkout} text="Thanh toán" />
             </div>
         </div>
     );

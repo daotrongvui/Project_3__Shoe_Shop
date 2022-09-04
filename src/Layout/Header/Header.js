@@ -13,7 +13,7 @@ import UseStore from 'Store/StoreContext';
 import { withRouter } from 'react-router-dom';
 
 const Header = () => {
-    console.log('url:', `${process.env.PUBLIC_URL}`);
+    // console.log('url:', `${process.env.PUBLIC_URL}`);
     const classes = useStyles();
 
     const { cart } = UseStore();

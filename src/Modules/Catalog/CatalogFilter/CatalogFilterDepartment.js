@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
@@ -9,6 +10,7 @@ const CatalogFilterDepartment = (props) => {
     const { subCategory, setSubCategory } = UseStore();
 
     const handleClick = (e) => {
+        console.log('subCategory:', subCategory, 'e:', e);
         if (subCategory === e) {
             setSubCategory('');
             return;

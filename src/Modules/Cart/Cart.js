@@ -8,12 +8,12 @@ import UseStore from 'Store/StoreContext';
 
 const Cart = () => {
     let { cart, Delete, quantity, prevClick, nextClick } = UseStore();
-    console.log('datadsdf:', cart);
+    console.log('data:', cart);
     return (
         <Container fluid>
             <Row className="mt-3 ">
                 <Col className="mb-3" xs={12}>
-                    <h2>Shopping Cart</h2>
+                    <h2>Giỏ hàng</h2>
                 </Col>
             </Row>
             <Row className="mt-3 cart">

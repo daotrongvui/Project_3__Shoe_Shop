@@ -5,6 +5,7 @@ import { makeStyles, useTheme } from '@material-ui/styles';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 import getWindowDimensions from 'Utils/getWindowDimensions';
+import NavLink from '../.././Layout/Components/NavLink';
 
 const ProductCarousel = (props) => {
     const classes = useStyles();
@@ -31,7 +32,7 @@ const ProductCarousel = (props) => {
             <div className="d-flex mb-2">
                 <h5 className={classes.headingText}>{heading}</h5>
                 <Link to={viewMoreAdress} className={classes.viewMore}>
-                    View More
+                    <NavLink linkAdress="/Giay_nam">Xem thêm</NavLink>
                 </Link>
             </div>
             <Slider className={classes.slider} slidesToShow={slidesToShow} {...settings}>
@@ -88,7 +89,9 @@ const useStyles = makeStyles((theme) => ({
     headingText: {
         fontSize: '22px',
         fontWeight: '500',
-        color: theme.colors.black,
+        color: '#687774!important',
+        display: 'flex',
+        alignItems: 'center',
     },
     viewMore: {
         color: theme.colors.darkGrey,

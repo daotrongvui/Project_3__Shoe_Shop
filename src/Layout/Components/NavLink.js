@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Link } from 'react-router-dom';
@@ -6,6 +7,7 @@ import Url from 'Paths';
 const NavLink = (props) => {
     const classes = useStyles();
     const { children, linkAdress } = props;
+    // console.log('children: ', children, 'linkAdress: ', linkAdress);
     return (
         <Link className={classes.link} to={Url.HOME + linkAdress}>
             {children}

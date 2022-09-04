@@ -7,7 +7,7 @@ import ButtonRound from 'Components/Buttons/ButtonRound';
 
 const Info = (props) => {
     const classes = useStyles();
-    const { type, chosen, color } = props;
+    const { type, color, size } = props;
     return (
         <p
             className={clsx(classes.info, {
@@ -16,6 +16,7 @@ const Info = (props) => {
         >
             <span className="mr-1">{type}:</span>
             {color}
+            {size}
         </p>
     );
 };

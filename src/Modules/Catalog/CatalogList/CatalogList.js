@@ -13,7 +13,7 @@ const CatalogList = (props) => {
     const { subCategory, valueMax, valueMin, color, sortBy } = UseStore();
 
     const [sort, setSort] = useState('newest');
-    console.log(sort);
+    // console.log(sort);
 
     const handleSort = (value) => {
         setSort(value);

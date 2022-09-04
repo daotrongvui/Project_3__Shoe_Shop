@@ -32,6 +32,11 @@ const useStyles = makeStyles((theme) => ({
         '& img': {
             width: '50px',
         },
+
+        '& img:hover': {
+            opacity: 0.7,
+            cursor: 'pointer',
+        },
     },
 }));
 

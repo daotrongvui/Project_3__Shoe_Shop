@@ -12,22 +12,22 @@ const HomePageSection = () => {
                 <Col className="mb-3" xs={12} md={4}>
                     <SectionBlock
                         address={`${Url.HOME}/Giay_nam`}
-                        text="giay_nam"
-                        img="/images/homepage/menSection.png"
+                        text="Giay_nam"
+                        img="/images/homepage/Giày Tennis Adizero Ubersonic 41.jpg"
                     />
                 </Col>
                 <Col className="mb-3" xs={12} md={4}>
                     <SectionBlock
                         address={`${Url.HOME}/Giay_nu`}
                         text="Giay_nu"
-                        img="/images/homepage/womenSection.png"
+                        img="/images/homepage/Giày Climacool Vento HEAT.RDY.jpg"
                     />
                 </Col>
                 <Col className="mb-3" xs={12} md={4}>
                     <SectionBlock
                         address={`${Url.HOME}/Giay_tre_em`}
                         text="Giay_tre_em"
-                        img="/images/homepage/kidSection.png"
+                        img="/images/homepage/Giày Tập Thể Thao Có Quai Dán Tensaur.jpg"
                     />
                 </Col>
             </Row>

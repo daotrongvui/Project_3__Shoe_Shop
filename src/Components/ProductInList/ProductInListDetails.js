@@ -4,17 +4,18 @@ import ProductInListInfo from './ProductInListInfo';
 
 const ProductInListDetails = (props) => {
     const item = props.item;
+    console.log(item);
 
     const classes = useStyles();
     return (
         <>
             <h6 className={classes.title}>{item.name}</h6>
             <div className="d-flex mt-2">
-                <ProductInListInfo type="Color" chosen="blue" color={item.color} />
-                <ProductInListInfo type="Size" chosen="XL" />
+                <ProductInListInfo type="Màu" color={item.color} />
+                <ProductInListInfo type="Size" size={item.size} />
             </div>
 
-            <h5 className="mt-2">{item.price} $</h5>
+            <h5 className="mt-2">{item.price}$</h5>
         </>
     );
 };

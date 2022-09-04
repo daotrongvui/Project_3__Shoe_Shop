@@ -17,8 +17,8 @@ const ProductInListQuantity = ({ idpr, carts }) => {
     };
     const classes = useStyles();
     return (
-        <div className="d-flex flex-column align-items-end">
-            <p className={classes.text}>Quantity</p>
+        <div className="d-flex flex-column align-items-center">
+            <p className={classes.text}>Số lượng</p>
 
             <div style={{ marginLeft: '-4px' }} className="d-flex mt-2">
                 <ButtonRound
@@ -34,8 +34,8 @@ const ProductInListQuantity = ({ idpr, carts }) => {
                     background="transparent"
                     onClick={() => nextClick(quantity, idpr)}
                 />
-                <span>10$</span>
             </div>
+            <span>Tổng: 10$</span>
         </div>
     );
 };

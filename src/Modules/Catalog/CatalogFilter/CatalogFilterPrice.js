@@ -17,7 +17,7 @@ const CatalogFilterPrice = () => {
 
     return (
         <div className="mt-2 mb-3">
-            <h3 className={classes.title}>Choose Price</h3>
+            <h3 className={classes.title}>Chọn khoảng giá</h3>
             <div className="mt-2">
                 <RangeSlider min={min} max={max} valueMax={valueMax} valueMin={valueMin} handleChange={handleChange} />
             </div>

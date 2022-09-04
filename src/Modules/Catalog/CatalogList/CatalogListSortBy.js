@@ -14,9 +14,9 @@ const CatalogListSortBy = (props) => {
 };
 
 const options = [
-    { value: 'newest', label: 'Newest' },
-    { value: 'desc', label: 'Price: High to Low' },
-    { value: 'asc', label: 'Price: Low to High' },
+    { value: 'newest', label: 'Mới nhất' },
+    { value: 'desc', label: 'Giá giảm dần' },
+    { value: 'asc', label: 'Giá tăng dần' },
 ];
 
 const useStyles = makeStyles((theme) => ({

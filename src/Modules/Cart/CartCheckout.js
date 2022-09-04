@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Url from 'Paths';
 
 const CartCheckout = ({ items }) => {
-    console.log('haha:', items);
+    console.log('CartCheckout', items);
     let Subtotal = items.reduce((prev, price) => prev + price.price, 0);
 
     const classes = useStyles();
@@ -16,21 +16,21 @@ const CartCheckout = ({ items }) => {
                 'w-100  ': true,
             })}
         >
-            <h5>Checkout Summary</h5>
+            <h5>Tổng thanh toán</h5>
             <div className="d-flex mt-3">
-                <p>Subtotal:</p>
+                <p>Tổng tiền:</p>
                 <p className="ml-auto">{Subtotal}$</p>
             </div>
-            <div className="d-flex ">
-                <p>Shipping:</p>
+            <div className="d-flex">
+                <p>Phí ship:</p>
                 <p className="ml-auto">1.5$</p>
             </div>
             <div className="d-flex mt-4">
-                <h6>Total:</h6>
+                <h6>Tổng cộng:</h6>
                 <h6 className="ml-auto">{Subtotal + 1.5}$</h6>
             </div>
             <div className="mt-3">
-                <ButtonBlock as={Link} to={Url.Checkout} text="Proceed to checkout" />
+                <ButtonBlock as={Link} to={Url.Checkout} text="Mua hàng" />
             </div>
         </div>
     );

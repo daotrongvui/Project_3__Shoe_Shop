@@ -7,7 +7,7 @@ import Url from 'Paths';
 const Product = (props) => {
     const classes = useStyles();
     const { img, price, name, link } = props;
-    console.log('props:', props);
+    // console.log('props:', props);
     return (
         <Link
             to={`${Url.HOME}/product${link}`}
@@ -21,8 +21,8 @@ const Product = (props) => {
                 alt="product img"
             />
             <div className={classes.textContainer}>
-                <h5 className="mt-1">{name}</h5>
-                <h6 className="mt-2">{price}VND</h6>
+                <h5 className="mt-2">{name}</h5>
+                <h6 className="mt-2">{price}$</h6>
             </div>
         </Link>
     );

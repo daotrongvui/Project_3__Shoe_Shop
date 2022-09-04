@@ -22,12 +22,12 @@ const CatalogFilter = () => {
 };
 
 const clothingTypes = [
-    { name: 'Originals', value: 'originals' },
-    { name: 'Thể thao', value: 'thethao' },
-    { name: 'Bóng đá', value: 'bongda' },
-    { name: 'Bóng rổ', value: 'bongro' },
-    { name: 'Quần vợt', value: 'quanvot' },
-    { name: 'Chạy', value: 'chay' },
+    { name: 'Giày Originals', value: 'originals' },
+    { name: 'Giày Thể thao', value: 'thethao' },
+    { name: 'Giày Bóng đá', value: 'bongda' },
+    { name: 'Giày Bóng rổ', value: 'bongro' },
+    { name: 'Giày Quần vợt', value: 'quanvot' },
+    { name: 'Giày Chạy', value: 'chay' },
 ];
 
 const sizes = [41, 42, 43, 44, 45, 46, 47, 48];

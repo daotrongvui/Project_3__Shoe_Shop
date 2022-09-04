@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
 const ProductInList = (props) => {
-    console.log('image:', process.env.PUBLIC_UR);
     const classes = useStyles();
     return (
         <div className={classes.imgContainer}>

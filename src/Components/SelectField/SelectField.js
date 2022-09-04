@@ -12,11 +12,11 @@ const customStyles = (value) => ({
     }),
     menu: (provided, state) => ({
         ...provided,
-        borderRadius: '30px',
+        borderRadius: '10px',
     }),
     menuList: (provided, state) => ({
         ...provided,
-        borderRadius: '25px',
+        borderRadius: '10px',
         padding: 0,
         margin: 0,
         backgroundColor: '#e7e7e7',
@@ -29,6 +29,7 @@ const customStyles = (value) => ({
         border: 'none!important',
         padding: '0 8px',
         boxShadow: 'none',
+        cursor: 'pointer',
     }),
     indicatorSeparator: (provided, state) => ({
         ...provided,
@@ -46,7 +47,7 @@ const SearchField = (props) => {
             components={{ DropdownIndicator }}
             isSearchable={false}
             options={options}
-            placeholder="Sort By"
+            placeholder="Lọc"
             {...rest}
         />
     );

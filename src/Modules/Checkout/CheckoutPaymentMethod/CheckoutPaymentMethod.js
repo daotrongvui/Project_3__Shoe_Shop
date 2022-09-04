@@ -14,7 +14,7 @@ const CheckoutPaymentMethodInput = () => {
                 'w-100  ': true,
             })}
         >
-            <h5>Billing address</h5>
+            <h5>Thẻ thanh toán</h5>
             <Row className="mt-3 ">
                 <Col className="mb-2" xs={12} lg={6}>
                     <CheckoutPaymentMethodFront />
