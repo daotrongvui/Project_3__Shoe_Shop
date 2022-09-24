@@ -22,6 +22,18 @@ export function filterColor(product, color) {
     return false;
 }
 
+export function filterSize(product, size) {
+    if (size === '') {
+        return true;
+    }
+
+    if (product.size === size) {
+        return true;
+    }
+
+    return false;
+}
+
 export function filterPrice(product, min, max) {
     if (product.price >= min && product.price <= max) {
         return true;

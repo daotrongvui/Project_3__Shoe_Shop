@@ -6,11 +6,11 @@ import { products } from 'Api/ClothingDatabase';
 import CatalogListSortBy from './CatalogListSortBy';
 import CatalogListPagination from './CatalogListPagination';
 import UseStore from 'Store/StoreContext';
-import { filterCategory, filterPrice, filterColor } from './CatalogListUtils';
+import { filterCategory, filterPrice, filterColor, filterSize } from './CatalogListUtils';
 
 const CatalogList = (props) => {
     const { id } = props;
-    const { subCategory, valueMax, valueMin, color, sortBy } = UseStore();
+    const { subCategory, valueMax, valueMin, color, sortBy, size } = UseStore();
 
     const [sort, setSort] = useState('newest');
     // console.log(sort);
@@ -23,8 +23,9 @@ const CatalogList = (props) => {
         let category = filterCategory(product, subCategory);
         let price = filterPrice(product, valueMin, valueMax);
         let colors = filterColor(product, color);
+        let sizes = filterSize(product, size);
 
-        return category && price && colors;
+        return category && price && colors && sizes;
     }
 
     function sortByHandle(a, b) {
@@ -63,6 +64,9 @@ const CatalogList = (props) => {
                                 </Col>
                             );
                     })}
+                {products.filter((product) => {
+                    console.log(product);
+                })}
                 <Col className="mt-4" xs={12}>
                     <CatalogListPagination
                         numberOfPages={products.filter((product) => capitalize(product) === id).length}

@@ -28,11 +28,11 @@ const CatalogFilterPrice = () => {
             >
                 <p>
                     {valueMin}
-                    <span>USD</span>
+                    <span>$</span>
                 </p>
                 <p className="ml-auto">
                     {valueMax}
-                    <span>USD</span>
+                    <span>$</span>
                 </p>
             </div>
         </div>

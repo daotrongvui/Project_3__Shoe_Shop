@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
         color: theme.colors.grey,
     },
     check: {
+        // eslint-disable-next-line no-useless-computed-key
         ['@media (max-width:360px)']: {
             flexDirection: 'column',
             '& a': {

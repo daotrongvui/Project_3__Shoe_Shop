@@ -10,7 +10,7 @@ import ProductInListProductImage from './ProductInListProductImage';
 
 const ProductInList = (props) => {
     const classes = useStyles();
-    const { items, quantity, prevClick, nextClick, idpr, carts } = props;
+    const { items, quantity, prevClick, nextClick, idpr, carts, setCart } = props;
     return (
         <>
             {
@@ -36,6 +36,8 @@ const ProductInList = (props) => {
                                 nextClick={nextClick}
                                 idpr={idpr}
                                 carts={carts}
+                                setCart={setCart}
+                                item={items}
                             />
                         </Col>
                     </Row>

@@ -16,12 +16,12 @@ const Auth = () => {
 const TabPanels = [
     {
         value: 'login',
-        title: 'Login',
+        title: 'Đăng nhập',
         component: <Login />,
     },
     {
         value: 'register',
-        title: 'Register',
+        title: 'Đăng ký',
         component: <Register />,
     },
 ];

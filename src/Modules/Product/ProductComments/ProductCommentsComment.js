@@ -6,20 +6,12 @@ const ProductCommentsComment = () => {
     return (
         <div className={classes.comment}>
             <div className={classes.commentHead}>
-                <img src="/icons/user/userGrey.svg" alt="user" />
-                <h4>Jondo Bondo</h4>
+                <img src="https://uybor.uz/borless/uybor/img/user-images/user_no_photo_600x600.png" alt="user" />
+                <h4>Đào Trọng Vui</h4>
             </div>
             <div className="my-1">
-                <p className={classes.reviewed}>Reviewed on 06.06.2020</p>
-                <p className={classes.commentText}>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas accusantium ea, officiis,
-                    odit quidem voluptatum provident rerum sed fugiat amet laborum! Quo optio facere eius esse. Alias,
-                    libero eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas accusantium ea,
-                    officiis, odit quidem voluptatum provident rerum sed fugiat amet laborum! Quo optio facere eius
-                    esse. Alias, libero eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas
-                    accusantium ea, officiis, odit quidem voluptatum provident rerum sed fugiat amet laborum! Quo optio
-                    facere eius esse. Alias, libero eius.
-                </p>
+                <p className={classes.reviewed}>05.09.2022</p>
+                <p className={classes.commentText}>Giày đẹp, bền, phù hợp...</p>
             </div>
         </div>
     );
@@ -47,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
     reviewed: {
         color: theme.colors.darkGrey,
         fontSize: '12px',
+        marginLeft: '40px',
     },
     commentText: {
         color: theme.colors.black,

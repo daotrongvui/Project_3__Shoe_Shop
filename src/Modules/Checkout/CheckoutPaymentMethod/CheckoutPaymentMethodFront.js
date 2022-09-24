@@ -20,7 +20,7 @@ const CheckoutPaymentMethodFront = () => {
                 </Col>
                 <Col className="mb-2" xs={7} sm={8}>
                     <label className={clsx(classes.label, { 'm-0': true })}>Card Holder</label>
-                    <CheckoutPaymentMethodInput placeholder="Johny Bravo" />
+                    <CheckoutPaymentMethodInput placeholder="Dao Trong Vui" />
                 </Col>
                 <Col className="mb-2" xs={5} sm={4}>
                     <label className={clsx(classes.label, { 'm-0': true })}>Expires</label>

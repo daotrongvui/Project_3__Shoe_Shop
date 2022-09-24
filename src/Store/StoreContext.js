@@ -9,6 +9,7 @@ export const StoreContextProvider = ({ children }) => {
     const [valueMax, setValueMax] = useState(150);
 
     const [color, setColor] = useState('');
+    const [size, setSize] = useState('');
 
     const [cart, setCart] = useState([]);
     const Delete = (id) => {
@@ -38,6 +39,8 @@ export const StoreContextProvider = ({ children }) => {
                 cart,
                 setCart,
                 Delete,
+                size,
+                setSize,
             }}
         >
             {children}
