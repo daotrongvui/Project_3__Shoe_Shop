@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';

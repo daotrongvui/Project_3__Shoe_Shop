@@ -15,15 +15,15 @@ const CheckoutPaymentMethodFront = () => {
         >
             <Row className="mt-3 ">
                 <Col className="mb-2" xs={12}>
-                    <label className={clsx(classes.label, { 'm-0': true })}>Card Number</label>
+                    <label className={clsx(classes.label, { 'm-0': true })}>Số thẻ</label>
                     <CheckoutPaymentMethodInput placeholder="0000 0000 0000 0000" />
                 </Col>
                 <Col className="mb-2" xs={7} sm={8}>
-                    <label className={clsx(classes.label, { 'm-0': true })}>Card Holder</label>
+                    <label className={clsx(classes.label, { 'm-0': true })}>Họ tên chủ thẻ</label>
                     <CheckoutPaymentMethodInput placeholder="Dao Trong Vui" />
                 </Col>
                 <Col className="mb-2" xs={5} sm={4}>
-                    <label className={clsx(classes.label, { 'm-0': true })}>Expires</label>
+                    <label className={clsx(classes.label, { 'm-0': true })}>Hạn thẻ</label>
                     <CheckoutPaymentMethodInput placeholder="MM/YY" />
                 </Col>
             </Row>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import Divider from '../Components/Divider';
-import CatalogFilterDepartment from './CatalogFilterDepartment';
+import CatalogFilterCatalogy from './CatalogFilterCatalogy';
 import CatalogFilterColors from './CatalogFilterColors';
 import CatalogFilterPrice from './CatalogFilterPrice';
 import CatalogFilterSizes from './CatalogFilterSizes';
@@ -10,7 +10,7 @@ const CatalogFilter = () => {
     const classes = useStyles();
     return (
         <div className={classes.filterContainer}>
-            <CatalogFilterDepartment clothingTypes={clothingTypes} />
+            <CatalogFilterCatalogy clothingTypes={clothingTypes} />
             <Divider />
             <CatalogFilterColors />
             <Divider />

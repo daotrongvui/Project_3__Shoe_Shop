@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -13,7 +14,6 @@ import UseStore from 'Store/StoreContext';
 import { withRouter } from 'react-router-dom';
 
 const Header = () => {
-    // console.log('url:', `${process.env.PUBLIC_URL}`);
     const classes = useStyles();
 
     const { cart } = UseStore();
@@ -32,7 +32,6 @@ const Header = () => {
                             lg={3}
                         >
                             <Navbar.Brand href="/daovui-giaychinhhang/">
-                                {/* <img src="/clothingstoretemplate/icons/logo/logo1.png" /> */}
                                 <img src={`${process.env.PUBLIC_URL}/icons/logo/logo1.png`} />
                             </Navbar.Brand>
                         </Col>

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import ButtonSemiRound from 'Components/Buttons/ButtonSemiRound';

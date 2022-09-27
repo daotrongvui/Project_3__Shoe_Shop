@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import UseStore from 'Store/StoreContext';
 
-const CatalogFilterDepartment = (props) => {
+const CatalogFilterCatalogy = (props) => {
     const classes = useStyles();
     const { clothingTypes } = props;
     const { subCategory, setSubCategory } = UseStore();
@@ -70,4 +70,4 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default CatalogFilterDepartment;
+export default CatalogFilterCatalogy;

@@ -16,22 +16,13 @@ const CheckoutBillingAddress = () => {
             <h5>Địa chỉ thanh toán</h5>
             <Row className="mt-3 ">
                 <Col className="mb-2" xs={12} md={6}>
-                    <InputField placeholder="Name" />
+                    <InputField placeholder="Họ tên" />
                 </Col>
                 <Col className="mb-2" xs={12} md={6}>
-                    <InputField placeholder="Phone Number" />
+                    <InputField placeholder="Số điện thoại" />
                 </Col>
                 <Col className="mb-2" xs={12} md={6}>
-                    <InputField placeholder="Country" />
-                </Col>
-                <Col className="mb-2" xs={12} md={6}>
-                    <InputField placeholder="City" />
-                </Col>
-                <Col className="mb-2" xs={12} md={6}>
-                    <InputField placeholder="Address" />
-                </Col>
-                <Col className="mb-2" xs={12} md={6}>
-                    <InputField placeholder="Zip Code" />
+                    <InputField placeholder="Địa chỉ" />
                 </Col>
             </Row>
         </div>

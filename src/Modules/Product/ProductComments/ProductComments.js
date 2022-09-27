@@ -7,20 +7,23 @@ import ProductCommentsComment from './ProductCommentsComment';
 const ProductComments = () => {
     const classes = useStyles();
     return (
-        <Row className="mt-4 ">
-            <Col className="my-2" xs={12}>
-                <ProductCommentsComment />
-            </Col>
-            <Col className="my-2" xs={12}>
-                <ProductCommentsComment />
-            </Col>
-            <Col className="my-2" xs={12}>
-                <ProductCommentsComment />
-            </Col>
-            <Col className="my-2" xs={12}>
-                <ProductCommentsComment />
-            </Col>
-        </Row>
+        <>
+            <h3 className="mt-5">Thêm nội dung đánh giá</h3>
+            <Row className="mt-2 ">
+                <Col className="my-2" xs={12}>
+                    <ProductCommentsComment />
+                </Col>
+                <Col className="my-2" xs={12}>
+                    <ProductCommentsComment />
+                </Col>
+                <Col className="my-2" xs={12}>
+                    <ProductCommentsComment />
+                </Col>
+                <Col className="my-2" xs={12}>
+                    <ProductCommentsComment />
+                </Col>
+            </Row>
+        </>
     );
 };
 

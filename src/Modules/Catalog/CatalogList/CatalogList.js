@@ -65,7 +65,7 @@ const CatalogList = (props) => {
                             );
                     })}
                 {products.filter((product) => {
-                    console.log(product);
+                    // console.log(product);
                 })}
                 <Col className="mt-4" xs={12}>
                     <CatalogListPagination

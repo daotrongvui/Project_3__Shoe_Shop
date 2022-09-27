@@ -20,7 +20,7 @@ const CatalogList = (props) => {
                     [classes.prevNext]: true,
                 })}
             >
-                Previous
+                Trước
             </Pagination.Prev>
             {pages.map((page, index) => (
                 <Pagination.Item
@@ -37,7 +37,7 @@ const CatalogList = (props) => {
                     [classes.prevNext]: true,
                 })}
             >
-                Next
+                Sau
             </Pagination.Next>
         </Pagination>
     );

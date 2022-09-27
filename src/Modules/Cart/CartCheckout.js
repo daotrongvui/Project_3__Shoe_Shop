@@ -17,15 +17,15 @@ const CartCheckout = ({ items }) => {
         >
             <h5>Tổng thanh toán</h5>
             <div className="d-flex mt-3">
-                <p>Subtotal:</p>
+                <p>Tổng tiền hàng:</p>
                 <p className="ml-auto">{parseFloat(Subtotal).toFixed(2)}$</p>
             </div>
             <div className="d-flex ">
-                <p>Shipping:</p>
+                <p>Phí ship:</p>
                 <p className="ml-auto">1.5$</p>
             </div>
             <div className="d-flex mt-4">
-                <h6>Total:</h6>
+                <h6>Tổng cộng:</h6>
                 <h6 className="ml-auto">{parseFloat(Subtotal + 1.5).toFixed(2)}$</h6>
             </div>
             <div className="mt-3">

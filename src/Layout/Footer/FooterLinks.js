@@ -7,7 +7,7 @@ const FooterLinks = () => {
         <div className="d-flex justify-content-center justify-content-md-center">
             <div className="p-1 d-flex justify-content-center" xs={3}>
                 <SocialLink
-                    linkAdress="www.instagram.com/vui.ntn/"
+                    linkAdress="www.instagram.com/vui.cules/"
                     icon={`${process.env.PUBLIC_URL}/icons/socialMedia/instagram.svg`}
                 />
             </div>

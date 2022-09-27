@@ -5,7 +5,7 @@ import ProductCarousel from 'Components/Carousel/ProductCarousel';
 const HomePageNewRelease = () => {
     return (
         <Container className="mt-5">
-            <ProductCarousel heading="Xem nhiều nhất" products={productArray} />
+            <ProductCarousel heading="Mới nhất" products={productArray} />
         </Container>
     );
 };
