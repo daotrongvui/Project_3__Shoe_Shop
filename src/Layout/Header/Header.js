@@ -72,9 +72,9 @@ const Header = () => {
         justify-content-sm-center 
         justify-content-start w-100"
                 >
-                    <NavLink linkAdress="/Giay_nam">Giày Nam</NavLink>
-                    <NavLink linkAdress="/Giay_nu">Giày nữ</NavLink>
-                    <NavLink linkAdress="/Giay_tre_em">Giày trẻ em</NavLink>
+                    <NavLink to="/Giay_nam">Giày Nam</NavLink>
+                    <NavLink to="/Giay_nu">Giày nữ</NavLink>
+                    <NavLink to="/Giay_tre_em">Giày trẻ em</NavLink>
                     <Navbar.Toggle
                         className={clsx(classes.toggleButton, {
                             'position-absolute ': true,

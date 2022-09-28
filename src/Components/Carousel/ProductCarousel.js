@@ -32,7 +32,7 @@ const ProductCarousel = (props) => {
             <div className="d-flex mb-2">
                 <h5 className={classes.headingText}>{heading}</h5>
                 <Link to={viewMoreAdress} className={classes.viewMore}>
-                    <NavLink linkAdress="/Giay_nam">Xem thêm</NavLink>
+                    <NavLink to="/Giay_nam">Xem thêm</NavLink>
                 </Link>
             </div>
             <Slider className={classes.slider} slidesToShow={slidesToShow} {...settings}>

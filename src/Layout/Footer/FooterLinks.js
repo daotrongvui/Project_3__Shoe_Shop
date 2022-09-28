@@ -7,27 +7,21 @@ const FooterLinks = () => {
         <div className="d-flex justify-content-center justify-content-md-center">
             <div className="p-1 d-flex justify-content-center" xs={3}>
                 <SocialLink
-                    linkAdress="www.instagram.com/vui.cules/"
+                    to="www.instagram.com/vui.cules/"
                     icon={`${process.env.PUBLIC_URL}/icons/socialMedia/instagram.svg`}
                 />
             </div>
             <div className="p-1 d-flex justify-content-center" xs={3}>
                 <SocialLink
-                    linkAdress="www.facebook.com/daotrongvui"
+                    to="www.facebook.com/daotrongvui"
                     icon={`${process.env.PUBLIC_URL}/icons/socialMedia/facebook.svg`}
                 />
             </div>
             <div className="p-1 d-flex justify-content-center" xs={3}>
-                <SocialLink
-                    linkAdress="www.pinterest.com"
-                    icon={`${process.env.PUBLIC_URL}/icons/socialMedia/pinterest.svg`}
-                />
+                <SocialLink to="www.pinterest.com" icon={`${process.env.PUBLIC_URL}/icons/socialMedia/pinterest.svg`} />
             </div>
             <div className="p-1 d-flex justify-content-center" xs={3}>
-                <SocialLink
-                    linkAdress="www.youtube.com"
-                    icon={`${process.env.PUBLIC_URL}/icons/socialMedia/youtube.svg`}
-                />
+                <SocialLink to="www.youtube.com" icon={`${process.env.PUBLIC_URL}/icons/socialMedia/youtube.svg`} />
             </div>
         </div>
     );
@@ -35,14 +29,9 @@ const FooterLinks = () => {
 
 const SocialLink = (props) => {
     const classes = useStyles();
-    const { icon, linkAdress } = props;
+    const { icon, to } = props;
     return (
-        <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={`https://${linkAdress}`}
-            className={clsx(classes.footerLinks)}
-        >
+        <a target="_blank" rel="noopener noreferrer" href={`https://${to}`} className={clsx(classes.footerLinks)}>
             <img src={icon} alt="socialMedia" />
         </a>
     );

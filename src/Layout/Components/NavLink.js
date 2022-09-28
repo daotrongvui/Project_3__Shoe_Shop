@@ -6,10 +6,9 @@ import Url from 'Paths';
 
 const NavLink = (props) => {
     const classes = useStyles();
-    const { children, linkAdress } = props;
-    // console.log('children: ', children, 'linkAdress: ', linkAdress);
+    const { children, to } = props;
     return (
-        <Link className={classes.link} to={Url.HOME + linkAdress}>
+        <Link className={classes.link} to={Url.HOME + to}>
             {children}
         </Link>
     );
