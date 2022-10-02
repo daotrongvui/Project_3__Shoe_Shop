@@ -51,10 +51,10 @@ const Header = () => {
                             lg={3}
                         >
                             <Nav.Link href="/daovui-giaychinhhang/auth"></Nav.Link>
-                            <NavLink linkAdress="/auth">
+                            <NavLink to="/auth">
                                 <IconText icon="/icons/user/userGrey.svg" text="Đăng ký / Đăng nhập" />
                             </NavLink>
-                            <NavLink linkAdress="/cart">
+                            <NavLink to="/cart">
                                 <IconText cart={cart.length} icon="/icons/cart/cartGrey.svg" text="Giỏ hàng" />
                             </NavLink>
                         </Col>
